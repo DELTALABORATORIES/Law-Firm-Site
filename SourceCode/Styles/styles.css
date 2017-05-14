@@ -1,0 +1,867 @@
+﻿/*======================Animations========================*/
+@keyframes CompleteChange{
+    from {
+        color: #CCA876;
+        background-color: #FFFFFF;
+    }
+    to {
+        color:#FFFFFF; 
+        background-color: #CCA876;
+    }
+}
+@keyframes BorderChange{
+    from {
+        border-color: lightgray;
+    }
+    to {
+        border-color: #D4B58A;
+    }
+}
+@keyframes CompleteChangeSection3 {
+    from {
+        background-color: #2B2F40;
+    }
+
+    to {
+        background-color: #CCA876;
+    }
+}
+@keyframes ImageAnimation {
+    from {
+        width:63%;
+    }
+
+    to {
+        width:75%;
+    }
+}
+@keyframes ImageAnimationAlternate {
+    from {
+        width: 55%;
+    }
+
+    to {
+        width: 62%;
+    }
+}
+@keyframes TextAnimation {
+    from {
+        color:#00030A;
+    }
+
+    to {
+        color: #CFAD7E;
+    }
+}
+@keyframes TextAnimationAlternate {
+    from {
+        color: #FFFFFF;
+    }
+
+    to {
+        color: #CFAD7E;
+    }
+}
+/*========================================================*/
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+}
+/*========================Header=================== */
+header {
+    width: 100%;
+    height: 90px;
+    background-color:white;
+}
+.HeaderMain {
+    z-index: 100;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    height: 109px;
+    background-color: white;
+}
+.LogoDiv{
+    float:left;
+    width:15%;
+    height:27px;
+    margin-bottom:0px;
+    margin-top:28px;
+    margin-left:5%;
+}
+.HeaderNavBar {
+    float: right;
+    width: 75%;
+    height: 43px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align:center;
+}
+.MenuItem {
+    width: 7%;
+    display: inline-block;
+    vertical-align: central;
+    padding: 1.8%;
+    float: left;
+    margin-top:8px;
+}
+.MenuItemText {
+    font-size: 1.18vw;
+    color: #00030A;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif
+}
+#MenuItemButton {
+    margin-top:-8px;
+    margin-left:55%;
+    position:relative;
+    float:left;
+    width:  200%;
+    height: 40px;
+    border: solid 1px #CCA876;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25vw;
+    color: #CCA876;
+    background-color: #FFFFFF;
+
+}
+    #MenuItemButton:hover {
+        float: left;
+        width: 200%;
+        height: 40px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #CCA876;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.25vw;
+        color: #FFFFFF;
+        background-color: #CCA876;
+        animation-name: CompleteChange;
+        animation-duration: 1s;
+    }
+/*========================Section 1======================*/
+.ImageSlider {
+    width: 100%;
+    height: 511px;
+    overflow: hidden;
+}
+/*========================Section 2======================*/
+.Section2MainDiv{
+    width:100%;
+    height:513px;
+    overflow:hidden;
+    display:inline-block;
+    text-align:center;
+    padding:6%;
+}
+.Section2SubDiv {
+    width: 20%;
+    height: 234px;
+    margin-left: 3%;
+    padding: 3%;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+    .Section2SubDiv:hover {
+        width: 20%;
+        height: 234px;
+        margin-left: 3%;
+        padding: 3%;
+        float: left;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #D4B58A;
+        animation-name:BorderChange;
+        animation-duration:1s;
+    }
+.Section2SubDivImage{
+    
+    height:85px;
+    margin-top:50px;
+    display:inline-block;
+    align-self:center;
+ 
+
+}
+.Section2SubDivImageN3 {
+    width: 140px;
+    height: 85px;
+    margin-top: 50px;
+    display: inline-block;
+    align-self: center;
+}
+.Section2HR {
+    width: 80%;
+    color: #CCA876;
+    height: 1px;
+    display:inline-block;
+    align-self:center;
+    vertical-align:central;
+}
+/*=====================Section 3=======================*/
+.Section3SubDiv {
+    background-color: #2B2F40;
+    width: 76.8%;
+    height: 550px;
+    margin-top:-8%;
+    overflow: hidden;
+    display: inline-block;
+    align-self:center;
+}
+.Section3SubDivleft {
+    width: 63%;
+    float: left;
+    overflow: hidden;
+}
+.HalfSquare1 {
+    width: 9%;
+    height: 40px;
+    margin-left: 9%;
+    margin-top: 17%;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-color: #FFFFFF;
+    border-width: 1px;
+    float:left;
+}
+.AboutUs {
+    font-size: 2.22vw;
+    color: #FFFFFF;
+    margin-top: 24%;
+    float: left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+.AboutUsParagraph {
+    margin-left: 18%;
+    font-size: 1.11vw;
+    color: #FFFFFF;
+    margin-top: 5%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.AboutUsFooter1 {
+    margin-left: -59%;
+    font-size: 1.25vw;
+    color: #FFFFFF;
+    margin-top: 23%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.AboutUsFooter2 {
+    margin-left: -36%;
+    font-size: 1.18vw;
+    color: #54596F;
+    margin-top: 23%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.HalfSquare2 {
+    width: 9%;
+    height: 54px;
+    margin-left: -5%;
+    margin-top: 21%;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: #FFFFFF;
+    border-width: 1px;
+    float: left;
+}
+.btnFreeConsultation {
+    width: 40%;
+    height: 51px;
+    border-style: solid;
+    border-color: #CCA876;
+    background-color: #2B2F40;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25vw;
+    margin-left: -20%;
+    margin-top: 76%;
+}
+    .btnFreeConsultation:hover {
+        width: 40%;
+        height: 51px;
+        border-style: solid;
+        border-color: #CCA876;
+        background-color: #CCA876;
+        color: #FFFFFF;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.25vw;
+        margin-left: -20%;
+        margin-top: 76%;
+        animation-name: CompleteChangeSection3;
+        animation-duration: 1s;
+    }
+Section3SubDivRight {
+    width: 50%;
+    height: 350px;
+    float: right;
+    margin-right:10px;
+    overflow: hidden;
+    display: inline-block;
+}
+/*==============================Section 4==========================*/
+.Section4MainDiv{
+    width:100%;
+    text-align:center;
+    overflow:hidden;
+    margin-top:80px;
+}
+.Section4SubDiv{
+    display:inline-block;
+    width:23%;
+    float:left;
+}
+.MemberInformation {
+    text-align: center;
+    width: 68%;
+    height: 103px;
+    background-color: #CCA876;
+    color: #FFFFFF;
+    margin-top: -80px;
+    z-index: 5;
+    position: relative;
+    display: inline-block;
+    align-self: center;
+}
+.MemberInformationText1 {
+    color: #FFFFFF;
+    text-align:center;
+    font-size: 1.53vw;
+    font-weight:600;
+    font-family: Arial, Helvetica, sans-serif;
+    display:inline-block;
+    align-self:center
+}
+.MemberInformationHR {
+    width: 119px;
+    height: 0.5px;
+    display: inline-block;
+    margin-bottom: 58px;
+    margin-top: -16px;
+}
+.MemberInformationText2 {
+    color: #FFFFFF;
+    font-size: 1.25vw;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    align-self: center;
+    vertical-align: middle;
+    margin-top: -84px;
+}
+.MemberNumber {
+    height: 155px;
+    color: darkgrey;
+    font-size: 17.36vw;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: -50px;
+    opacity:0.2;
+}
+
+#Experts {
+    font-size: 3.47vw;
+    font-weight: 600;
+    margin-left: 60px;
+    margin-top: -265px;
+    -webkit-transform: translateX(-50%);
+}
+#InFields{
+    width:200px;
+    font-size:1.46vw;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    margin-left:75px;
+    margin-top:-40px;
+}
+#ExpertsText {
+    width: 300px;
+    font-size: 1.04vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-top: -3px;
+    color:lightslategray;
+}
+#ReadMore {
+    width: 150px;
+    font-size: 1.18vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:100;
+    margin-left: 60px;
+    margin-top: 25px;
+    border-style:none;
+    background-color:#FFFFFF;
+}
+    #ReadMore:hover {
+        width: 150px;
+        font-size: 1.18vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        margin-left: 60px;
+        margin-top: 25px;
+        color: #CDAA7A;
+    }
+ /*================Section 5=====================*/
+ .Section5Div{
+     margin-top:80px;
+     width:100%;
+ }
+/*=================Section 6====================*/
+.Section6MainDiv{
+    width:100%;
+    height:500px;
+    padding:40px;
+    padding-top:0px;
+    align-items:center;
+}
+.Section6SubDivLeft{
+    width:50%;
+    float:left;
+    display:inline-block;
+}
+.Section6SubDivRight{
+    width:50%;
+    float:left;
+    display:inline-block;
+}
+.FAQSectionTop{
+    height:74px;
+    width:92%;
+    border-bottom-style:solid;
+    border-top-style:solid;
+    border-width:1px;
+    border-color:darkgray;
+}
+.FAQSection {
+    height: 74px;
+    width: 92%;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: darkgray;
+}
+.FAQSectionText {
+    font-size: 1.25vw;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    font-weight:600;
+    vertical-align:central;
+    margin-top:28px;
+    margin-left:28px;
+    float:left;
+    width:80%;
+
+}
+#FAQSectionButton {
+    margin-top:8px;
+    color: #CCA876;
+    font-size: 2.36vw;
+    background-color: #FFFFFF;
+    border-style: none;
+    width: 10%;
+    height: 60px;
+    float:right;
+}
+/*===============================Section 7========================*/
+.Section7MainDiv {
+    width: 100%;
+    height: 226px;
+    background-color: #F2F3F8;
+    margin-top:40px;
+    overflow:hidden;
+    text-align:center;
+}
+.Section7SubDiv{
+    display:inline-block;
+    align-self:center;
+    width:22%;
+    float:left;
+    padding:10px;
+    margin-top:70px;
+    text-align:center;
+}
+.Section7Image{
+    width: 63%;
+}
+   .Section7Image:hover{
+       width:63%;
+       animation-name:ImageAnimation;
+       animation-duration:1s;
+         
+   }
+.Section7Image1 {
+    width: 55%;
+}
+
+    .Section7Image1:hover {
+        width: 55%;
+        animation-name: ImageAnimationAlternate;
+        animation-duration: 1s;
+    }
+/*==============================Section 8========================*/
+.Section8MainDiv {
+width:100%;
+margin-top:-30px;
+text-align:center;
+overflow:hidden;
+}
+.ButtonChangePage {
+    display:inline-block;
+    width: 16%;
+    height:100%;
+    float: left;
+    text-align:center;
+    
+}
+#ButtonChangePage {
+    display: inline-block;
+    width: 26%;
+    float: left;
+    border-style: none;
+    background-color: #F2F3F8;
+    font-size: 3.47vw;
+    color: #D8D8DC;
+    margin-top: 84%;
+    margin-left: 52%;
+}
+    #ButtonChangePage:hover {
+        width: 60px;
+        float: left;
+        border-style: none;
+        background-color: #CCA876;
+        font-size: 3.47vw;
+        color: #FFFFFF;
+        margin-top: 84%;
+        margin-left: 52%;
+        animation-name:CompleteChange;
+        animation-duration:0.5s;
+    }
+#ButtonChangePage2 {
+    width: 26%;
+    float: left;
+    border-style: none;
+    background-color: #F2F3F8;
+    font-size: 3.47vw;
+    color: #D8D8DC;
+    margin-top: 85%;
+    margin-left: 22%;
+}
+
+    #ButtonChangePage2:hover {
+        width: 60px;
+        float: left;
+        border-style: none;
+        background-color: #CCA876;
+        font-size: 3.47vw;
+        color: #FFFFFF;
+        margin-top: 85%;
+        margin-left: 22%;
+        animation-name: CompleteChange;
+        animation-duration: 0.5s;
+    }
+.PageLeft {
+    display:inline-block;
+    width: 34%;
+    float: left;
+    color: #A8A8A9;
+}
+.PageRight {
+    display:inline-block;
+    width: 34%;
+    float: left;
+}
+/*========================Section 9=======================*/
+.Section9MainDiv {
+    width: 100%;
+    margin-top:30px;
+    background-color: #F2F3F8;
+    height:695px;
+    margin-top:5px;
+    
+}
+.Section9SubDivLeft{
+    width:60%;
+    float:left;
+}
+.Section9SubDivRight {
+    width:40%;
+    float: left;
+}
+#Name {
+    margin-left: 22%;
+    width: 30%;
+    height: 38px;
+    border-style: none;
+    color: lightgray;
+}
+#Email {
+    margin-left: 22%;
+    margin-top: 25px;
+    width: 30%;
+    height: 38px;
+    border-style: none;
+    color: lightgray;
+}
+#Phone {
+    margin-left: 20px;
+    width: 30%;
+    height: 38px;
+    border-style: none;
+    color: lightgray;
+}
+#LawSphere {
+    margin-left: 20px;
+    width: 30%;
+    height: 38px;
+    border-style: none;
+    color: lightslategray;
+}
+#Message {
+    width: 63%;
+    height: 150px;
+    margin-left: 22%;
+    margin-top: 30px;
+    color: lightslategray;
+}
+.ImageForm {
+    margin-top: -29px;
+    width: 84%;
+    float: left;
+    align-self: center;
+    display: inline-block;
+}
+#RequiestConsultation {
+    width: 27%;
+    height: 38px;
+    border-style: none;
+    background-color: #BC825C;
+    color:#FFFFFF;
+    font-size:1.11vw;
+    margin-left:22%;
+    margin-top:40px;
+}
+/*==============================Section 10===========================*/
+.Section10MainDiv{
+    width:100%;
+    padding:10px;
+}
+.Section10SubDiv{
+    width:20%;
+    float:left;
+    padding:15px;
+}
+.InfoBox{
+    width:99%;
+    border-style:solid;
+    border-top-style:none;
+    border-width:1px;
+    margin-top:-15px;
+    border-color:lightgray;
+}
+.InfoBoxText {
+    margin-left: 10%;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.04vw;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 28px;
+}
+    .InfoBoxText:hover {
+        margin-left: 10%;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.04vw;
+        font-weight: 600;
+        display: inline-block;
+        margin-top: 28px;
+        animation-name:TextAnimation;
+        animation-duration:0.8s;
+    }
+.InfoBoxDate {
+    margin-top:0%;
+    margin-left: 10%;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 600;
+    color: lightgray; 
+}
+.Admin {
+    margin-top: -10%;
+    margin-left: 60%;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.83vw;
+    font-weight: 600;
+    color: #D7A493;
+}
+/*=======================Footer=====================*/
+footer {
+    background-color: #2B2F40;
+    width:100%;
+    display:inline-block;
+    padding:10px;
+}
+.FooterSubDiv {
+    width: 20%;
+    padding: 3px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 0px;
+}
+.FooterLogo{
+    margin-left:0px;
+    width:44%
+}
+.FooterAbout{
+    margin-top:7%;
+    margin-left:0px;
+    font-size:0.83vw;
+    text-align:left;
+    color:grey;
+}
+.FooterConsultation {
+    margin-top: 12%;
+    margin-left: 0px;
+    font-size: 1.11vw;
+    text-align: left;
+    color: #FFFFFF;
+}
+    .FooterConsultation:hover {
+        margin-top: 12%;
+        margin-left: 0px;
+        font-size: 1.11vw;
+        text-align: left;
+        color: #BC825C;
+        animation-name:TextAnimationAlternate;
+        animation-duration:0.8s;
+    }
+.FooterRecentPosts {
+    margin-top:1%;
+    margin-left: 0px;
+    font-size: 1.25vw;
+    text-align: left;
+    color: #FFFFFF;
+}
+.PostPreview{
+    border-radius:13%;
+    float:left;
+    width:25%;
+}
+.FooterBox2Main{
+    font-size:0.9vw;
+    font-weight:600;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top:1%;
+    margin-left:7%;
+    float:left;
+    color:white;
+}
+    .FooterBox2Main:hover {
+        font-size: 0.9vw;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 1%;
+        margin-left: 7%;
+        float: left;
+        color: #BC825C;
+        animation-name: TextAnimationAlternate;
+        animation-duration: 0.8s;
+        
+    }
+.FooterBox2Sub {
+    font-size: 0.69vw;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4%;
+    margin-left: 8%;
+    float: left;
+    color: lightgray;
+}
+.Column1{
+    float:left;
+    margin-top:0px;
+}
+.Column2 {
+    float: left;
+    margin-top: 0px;
+    margin-left:50px;
+}
+.QuickLinks {
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.97vw;
+    color: white;
+    margin-left:20px;
+}
+    .QuickLinks:hover {
+        margin-top: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.97vw;
+        color: #BC825C;
+        margin-left: 20px;
+        animation-name: TextAnimationAlternate;
+        animation-duration: 0.8s;
+    }
+.FooterArrow {
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.97vw;
+    color: #BC825C;
+    float:left;
+    display:inline-block;
+}
+.Box3{
+    width:220px;
+    text-align:left;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:0.83vw;
+    color:white;
+    margin-left:3%;
+    display:inline-block;
+    margin-top:5px;
+}
+    .Box3:hover{
+        width: 220px;
+        text-align: left;
+        float: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.83vw;
+        color: white;
+        margin-left: 3%;
+        display: inline-block;
+        margin-top: 5px;
+        animation-name:TextAnimationAlternate;
+        animation-duration:0.8s;
+    }
+.FooterHR {
+    margin-left:3.75%;
+    float: left;
+    border-color: #82858F;
+    border-width: 1px;
+    width:84%;
+    margin-top: 6%;
+}
+.FooterRes{
+    font-size:0.97vw;
+    float:left;
+    color:white;
+    margin-left:4%;
+    margin-top:3%;
+}
+.FooterFollow{
+    float:right;
+    margin-right:11%;
+    margin-top:3%;
+}
